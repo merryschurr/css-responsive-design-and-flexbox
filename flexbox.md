@@ -7,6 +7,3 @@ Flexbox has [good support on modern browsers](http://caniuse.com/#search=flexbox
 Instead of going through Flexbox notes, play the following game called Flexbox Froggy. It'll teach you everything you need to know about Flexbox.
 
 [Flexbox Froggy](http://flexboxfroggy.com/) 
-
-
-_We will discuss this after we introduce responsive design in week 2_
