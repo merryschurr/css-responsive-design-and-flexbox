@@ -1,11 +1,19 @@
+![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
+
+<!--1:00 5 minutes -->
+
 #Responsive Design
+
+<!--Hook: Raise your hand if you've ever opened a webpage on your phone, and it looks ugly?  Buttons all over the place, text falling off the screen?  You are not alone.  The purpose of Responsive Design is to solve this problem, so whether you are looking at one of your projects on a laptop, desktop, tablet, or smartphone, it is always readable and user-friendly. -->
 
 ##Objectives
 
-* Define responsive design
-* Understand the purposes and benefits of responsive design
-* Explain the purpose of the viewport meta tag in context of responsive design
-* Utilize media queries to change a web page's layout
+* **Define** responsive design
+* **Understand** the purposes and benefits of responsive design
+* **Explain** the purpose of the viewport meta tag in context of responsive design
+* **Utilize** media queries to change a web page's layout
+
+<!--1:05 5 minutes -->
 
 ##What is responsive design?
 
@@ -19,12 +27,13 @@ Or, the dryer Wikipedia definition:
 
 Not that long ago building a successful online presence meant just ensuring that your website worked correctly in all the major desktop browsers. 
 
-Fast forward to today (2015) and the desktop computer is dying, more than 71% of the US population owns a smartphone.
+Fast forward to today (2016) and the desktop computer is dying, and more than 71% of the US population owns a smartphone.
 
 * **195 million** tablet devices were sold in 2013.
 * The number of active mobile devices and human beings crossed over somewhere around the [7.19 billion mark](http://www.independent.co.uk/life-style/gadgets-and-tech/news/there-are-officially-more-mobile-devices-than-people-in-the-world-9780518.html).
-* New devices like iWatches are changing the game too
+* New devices like iWatches are changing the game as well.
 
+<!--1:10 10 minutes -->
 
 ## Mobile is the future
 
@@ -35,13 +44,22 @@ Fast forward to today (2015) and the desktop computer is dying, more than 71% of
 
 ### Examples of responsive sites:
 
+<!--Show these, shrink screen to demo responsiveness -->
+
 - [Boston Globe](http://www.bostonglobe.com/)  
 - [GA](https://generalassemb.ly/)
 
 #### Non-responsive sites
 
 You'll be hard-pressed to find a major website that doesn't deal with mobile devices somehow. Reddit isn't specifically responsive, but you do have the option of switching to a mobile-optimized site.
+
+#### Exercise
+
 If you look at the Reddit site on your phone, try hitting the hamburger menu in the top right corner, and selecting desktop site. How does this change your experience?
+
+<!-- CFU: Think-pair-share -->
+
+<!--1:20 5 minutes -->
 
 ## The Web has always been responsive
 
@@ -51,9 +69,11 @@ If we go to this simple example, we see that floats reflow, depending on screen 
 
 http://codepen.io/jsera/pen/MaobYW
 
-Likewise, the paragraphs remain at 50% of screen width, no matter what this screen width is.
+Likewise, the paragraphs remain at 50% of screen width, no matter what the screen width is.
 
 This works to an extent, but we'd really like a few more tools for changing layout based on screen size.
+
+<!--1:25 5 minutes -->
 
 ## The Viewport
 
@@ -67,13 +87,15 @@ When designing sites for mobile, we want to minimize this panning. We can make v
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-The user will still be able to pinch and zoom, and there's a way to prevent that, but it's considered to be an accessibility problem, so we won't get into that.
+The user will still be able to pinch and zoom, and that's fine, but at least we can guarantee they will start in a reasonable state.
 
 Some devices start out zoomed in, some don't, and in some cases, it's a browser setting, but using this ensures a consistent experience.
 
+<!--1:30 5 minutes -->
+
 ## Media Queries
 
-Media queries are simply a way to conditionally apply styles based on  the device the page is being displayed on.
+Media queries are simply a way to conditionally apply styles based on the device the page is being displayed on.
 
 We already know that if we do something like this:
 
@@ -103,7 +125,7 @@ p {
 
 Now, all p tags will be red, until the screen size reaches 600px, when they'll turn blue.
 
-A potentially more useful example would be to float all list items left until a certain screen size, then revert the list items to block, causing them to stack.
+A potentially more useful example would be to list all items inline until a certain screen size, then revert the list items to block, causing them to stack.
 
 ```css
 li {
@@ -125,7 +147,48 @@ You notice how the above looks slightly backwards? That's because we're using a 
 and take things away, we aim for the smallest, least capable screens, ensure they have a good experience, then add things like frosting on a cake. That way, even if we don't
 have time to implement everything, everyone gets a good experience.
 
-This means using the min-width query instead of the max width query. This just means the styles aren't applied unless, at minimum, the screen is X pixels wide.
+This means using the min-width query instead of the max-width query. This just means the styles aren't applied unless, at minimum, the screen is X pixels wide.
+
+<!--1:35 30-40 minutes -->
+
+## Independent Practice
+
+Create a responsive page for our class.
+
+Here's an example of our mobile view:
+
+<!-- Replace with our class -->
+
+![mobile page design](https://github.com/den-wdi-1/css-responsive-design-and-flexbox/blob/master/images/mobile_view.png)
+
+And this is our desktop view:
+![desktop page design](https://github.com/den-wdi-1/css-responsive-design-and-flexbox/blob/master/images/desktop_view.png) 
+
+### Create a mobile view
+Add the following elements to our starter code:
+
+1. The image in assets below the h1 tag
+2. A course summary 
+  1. A h2 tag ``WDI Denver, Da Best``
+  2. An unordered list with the following bullets:
+    1. ``Learn Full Stack programming``
+    2. ``Explore MEAN Stack, Express, and more``
+    3. ``Create a developer portfolio``
+  3. The background should be blue for the course summary 
+  4. The text color for the course summary should be white
+3. Use an ipsum generator, [http://generator.lorem-ipsum.info/](http://generator.lorem-ipsum.info/)
+to create 3 paragraphs of text and add it under the course summary.
+
+### Add the responsive formatting
+
+1. Update the background to red and color to black if you're not on a mobile device.
+2. Make the first 2 elements(the course summary and the image) appear on the same 
+(horizontal) line only for non-mobile viewers. Make sure the course summary is on the left. 
+
+### Bonus
+
+<!--Fix this -->
+3. Add ``Team Name!`` to the image
 
 ## Useful Links
 
