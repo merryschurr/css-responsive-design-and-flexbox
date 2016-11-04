@@ -1,0 +1,40 @@
+header {
+	font-size: 40px;
+	text-align: center;
+}
+
+.imgBox {
+	float: right;
+	padding: 0px 70px;
+	
+
+}
+
+@media (min-width: : 600px) {
+		.imgBox {
+		}
+	}
+
+
+.boxText {
+	background-color: blue;
+	float: left;
+	padding: 100px 70px;
+
+
+}
+
+@media (min-width: : 600px) {
+		.boxText {
+			background-color: red;
+		}
+	}
+
+
+
+.text {
+
+	color: blue;
+	clear: both;
+
+}
