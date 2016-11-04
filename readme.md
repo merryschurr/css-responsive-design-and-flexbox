@@ -1,6 +1,6 @@
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-<!--1:00 5 minutes -->
+<!--1:30 5 minutes -->
 
 #Responsive Design
 
@@ -13,7 +13,7 @@
 * **Explain** the purpose of the viewport meta tag in context of responsive design
 * **Utilize** media queries to change a web page's layout
 
-<!--1:05 5 minutes -->
+<!--1:35 5 minutes -->
 
 ##What is responsive design?
 
@@ -33,7 +33,7 @@ Fast forward to today (2016) and the desktop computer is dying, and more than 71
 * The number of active mobile devices and human beings crossed over somewhere around the [7.19 billion mark](http://www.independent.co.uk/life-style/gadgets-and-tech/news/there-are-officially-more-mobile-devices-than-people-in-the-world-9780518.html).
 * New devices like iWatches are changing the game as well.
 
-<!--1:10 10 minutes -->
+<!--1:40 10 minutes -->
 
 ## Mobile is the future
 
@@ -59,7 +59,7 @@ If you look at the Reddit site on your phone, try hitting the hamburger menu in 
 
 <!-- CFU: Think-pair-share -->
 
-<!--1:20 5 minutes -->
+<!--1:50 5 minutes -->
 
 ## The Web has always been responsive
 
@@ -73,7 +73,7 @@ Likewise, the paragraphs remain at 50% of screen width, no matter what the scree
 
 This works to an extent, but we'd really like a few more tools for changing layout based on screen size.
 
-<!--1:25 5 minutes -->
+<!--1:55 5 minutes -->
 
 ## The Viewport
 
@@ -91,7 +91,7 @@ The user will still be able to pinch and zoom, and that's fine, but at least we 
 
 Some devices start out zoomed in, some don't, and in some cases, it's a browser setting, but using this ensures a consistent experience.
 
-<!--1:30 5 minutes -->
+<!--2:00 5 minutes -->
 
 ## Media Queries
 
@@ -149,7 +149,7 @@ have time to implement everything, everyone gets a good experience.
 
 This means using the min-width query instead of the max-width query. This just means the styles aren't applied unless, at minimum, the screen is X pixels wide.
 
-<!--1:35 30-40 minutes -->
+<!--2:35 30-40 minutes -->
 
 ## Independent Practice
 
